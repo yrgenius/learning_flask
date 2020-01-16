@@ -6,6 +6,7 @@ from posts.blueprint import posts
 app = Flask(__name__)
 app.config.from_object(Configurauion)
 
+# регистрируем модуль (блюпринт)
 app.register_blueprint(posts, url_prefix='/blog')
 
 #
